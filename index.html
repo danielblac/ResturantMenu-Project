@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Diner</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+	<link rel="icon" href="./images/burger-background.jpg">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js" type="module"></script>
+</head>
+<body>
+	<header>
+		<h1>Daniel's Diner</h1>
+		<p>The Best Burgers and pizzas in town</p>
+	</header>
+	<main>
+		<section id="product-menu">
+			<!-- menu -->
+		</section>
+		<section >
+            <div id="your-order" class="your-order">
+                <p class="bold product-name order">Your Order</p>
+				<div id="order-list">
+					<!-- order List -->
+				</div>
+                <p class="product-name bold total-price">Total price <span class="bold amount right" id="total-price">$0</span></p>
+                <button class="complete-order-btn" id="complete-order-btn">Complete order</button>
+            </div>
+        </section>
+	</main>
+	<div class="modal" id="modal">
+		<h2 class="modal-header">Enter card details</h2>
+		<form id="payment-form" class="payment-form">
+			<input type="text" name="fullname" placeholder="Enter your name" required/>
+			<input name="cardnumber" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="Enter card number" required/>
+			<input name="CVV" type="tel" inputmode="numeric" autocomplete="cc-number" maxlength="6" placeholder="Enter CVV" required/>
+			<button class="pay-btn" id="pay-btn" type="submit">Pay</button>
+		</form>	
+	</div>
+	<div class="payment-success" id="payment-success">
+		
+	</div>
+</body>
+</html>
