@@ -10,7 +10,6 @@ const modal = document.getElementById('modal')
 const payBtn = document.getElementById('pay-btn')
 const paymentForm = document.getElementById('payment-form')
 const paymentSuccess = document.getElementById('payment-success')
-
 const orderArray = []
 
 
@@ -21,8 +20,6 @@ document.addEventListener('click', function(e){
         removeOrderClick(e.target.dataset.remove)
     } else if (e.target.id === 'complete-order-btn'){
         popUpModal()
-    } else if (e.target.id === 'pay-btn') {
-        
     }
 })
 
